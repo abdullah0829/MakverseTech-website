@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import logo from '../assets/logo.png'
+
 const footerlinks = [
   {
     title: "Quick Links",
@@ -62,7 +64,7 @@ const Footer = () => {
     <section id='footer' className={`${StyleSheet.flexCenter} ${StyleSheet.paddingY} px-15 sm:px-6 md:px-10 lg:px-40 flex-col`}>
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-start gap-6 sm:gap-4 mb-8 w-full">
         <div className='flex-1 flex flex-col items-start text-left sm:items-center sm:text-center md:items-start md:text-left'>
-          <img src="./src/assets/logo.png" alt="makverse" className='w-[266px] h-[120px] object-contain' />
+          <img src={logo} alt="makverse" className='w-[266px] h-[120px] object-contain' />
           <p className={`${StyleSheet.paragraph} mt-4 max-w-[310px]`}>IT Solutions and Managed Services Provider specializing in developing custom solutions.</p>
         </div>
 

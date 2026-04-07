@@ -1,5 +1,6 @@
 import { ArrowRight, Menu, X } from 'lucide-react'
 import React, { useState } from 'react'
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
 
@@ -10,8 +11,8 @@ const Navbar = () => {
 
 
       <img
-        src="./src/assets/logo.png"
-        alt=""
+        src={logo} 
+        alt="logo"
         className='w-32 sm:w40'
       />
       <div className={`text-gray-700 sm:text-sm ${!sidebarOpen ? 'max-sm:w-0 overflow-hidden' : 'max-sm:w-60 max-sm:pl-10'} max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-sky-500 max-sm:text-white max-sm:pt-20 flex sm:items-center gap-5 transition-all`}>

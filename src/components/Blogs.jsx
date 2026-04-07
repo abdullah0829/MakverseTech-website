@@ -1,32 +1,42 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
 
+// ✅ Correct image imports
+import blogImg1 from '../assets/blog1.webp'
+import blogImg2 from '../assets/blog2.webp'
+import blogImg3 from '../assets/blog3.webp'
+
+// ✅ Data using imported images
 const blogsCard = [
   {
     time: "December, 2025",
     title: "Best Software Development Companies in New York",
     desc: "New York's tech ecosystem is growing fast, thanks to the million-dollar Empire AI investment that began in 2024.",
-    image: "./src/assets/blog1.webp"
+    image: blogImg1
   },
   {
     time: "November, 2025",
     title: "Guide to Medical Software Development",
     desc: "Medical software development creates secure, compliant healthcare solutions that improve patient care, automate workflows, and support clinical decisions.",
-    image: "./src/assets/blog2.webp"
+    image: blogImg2
   },
   {
     time: "November, 2025",
     title: "Top Software Development Companies in Texas",
     desc: "Explore the top software development companies in Texas, featuring innovation-driven leaders like TechMatter, Softeq, ScienceSoft, and more.",
-    image: "./src/assets/blog3.webp"
+    image: blogImg3
   }
 ]
 
 const Blogs = () => {
   return (
-    <section id='blogs' className='relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 mb-20'>
+    <section
+      id='blogs'
+      className='relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 mb-20'
+    >
 
-      <h1 className='text-2xl font-semibold bg-blue-300 rounded-full px-3 py-1'>
+      {/* Heading */}
+      <h1 className='text-2xl font-semibold bg-blue-300 rounded-full px-4 py-1'>
         Our Blogs
       </h1>
 
@@ -36,15 +46,17 @@ const Blogs = () => {
         {blogsCard.map((item, index) => (
           <div
             key={index}
-            className='bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col'
+            className='bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group'
           >
 
             {/* Image */}
-            <img
-              src={item.image}
-              alt={item.title}
-              className='w-full h-48 object-cover'
-            />
+            <div className='overflow-hidden'>
+              <img
+                src={item.image}
+                alt={item.title}
+                className='w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300'
+              />
+            </div>
 
             {/* Content */}
             <div className='p-5 flex flex-col gap-3'>
@@ -65,9 +77,9 @@ const Blogs = () => {
               </p>
 
               {/* Button */}
-              <button className='mt-3 flex items-center gap-2 text-blue-600 font-medium hover:gap-3 transition-all duration-300'>
+              <button className='mt-3 flex items-center gap-2 text-blue-600 font-medium group-hover:gap-3 transition-all duration-300'>
                 Read More
-                <ArrowRight className='w-4 h-4' />
+                <ArrowRight className='w-4 h-4 group-hover:translate-x-1 transition-transform duration-300' />
               </button>
 
             </div>

@@ -1,5 +1,6 @@
 import { Sparkles } from 'lucide-react'
 import React from 'react'
+import bgImg from "../assets/bg-img.jpeg";
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
     
       <p className='text-sm sm:text-lg font-medium text-gray-500 max-w-4/5 sm:max-w-lg pb-3 transition-all animate-in slide-in-from-bottom duration-700 delay-200'>From building scalable digital products to managing mission-critical IT infrastructure, we deliver solutions that drive performance and long-term success.</p>
       <div className='relative'>
-        <img src="./src/assets/bg-img.jpeg" alt="" className=' w-4xl max-w-6xl rounded-4xl transition-all animate-in slide-in-from-bottomrmdir /s /q .git
+        <img src={bgImg} alt="" className=' w-4xl max-w-6xl rounded-4xl transition-all animate-in slide-in-from-bottomrmdir /s /q .git
          duration-700 delay-100'/>
       </div>
     </section>
