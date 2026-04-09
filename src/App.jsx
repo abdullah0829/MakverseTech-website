@@ -6,7 +6,7 @@ import ServiceCard from './components/Services'
 import WhyChooseUs from './components/WhyChooseUs'
 import Footer from './components/Footer'
 import Blogs from './components/Blogs'
-import ContactUs from './components/ContactUs'
+import FAQs from './components/FAQs'
 
 const App = () => {
 
@@ -58,20 +58,20 @@ dotRef.current.style.transform =
       <Services />
       <WhyChooseUs />
       <Blogs />
-      <ContactUs />
+      <FAQs />
       <Footer />
 
 
       {/* Custom Cursor Ring */}
 <div
   ref={outlineRef}
-  className="fixed top-0 left-0 h-6 w-6 rounded-full border border-violet-500 pointer-events-none z-[9999]"
+  className="fixed top-0 left-0 h-6 w-6 rounded-full border border-[#005dc6] pointer-events-none z-[9999]"
 ></div>
 
 {/* Custom Cursor Dot */}
 <div
   ref={dotRef}
-  className="fixed top-0 left-0 h-2 w-2 rounded-full bg-violet-500 pointer-events-none z-[9999]"
+  className="fixed top-0 left-0 h-2 w-2 rounded-full bg-[#005dc6] pointer-events-none z-[9999]"
 ></div>
 
     </div>

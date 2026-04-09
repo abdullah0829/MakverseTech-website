@@ -65,19 +65,19 @@ const Footer = () => {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-start gap-6 sm:gap-4 mb-8 w-full">
         <div className='flex-1 flex flex-col items-start text-left sm:items-center sm:text-center md:items-start md:text-left'>
           <img src={logo} alt="makverse" className='w-[266px] h-[120px] object-contain' />
-          <p className={`${StyleSheet.paragraph} mt-4 max-w-[310px]`}>IT Solutions and Managed Services Provider specializing in developing custom solutions.</p>
+          <p className={`${StyleSheet.paragraph} text-gray-700 mt-4 max-w-[200px] `}>IT Solutions and Managed Services Provider specializing in developing custom solutions.</p>
         </div>
 
-        <div className='flex-[1.5] w-full flex flex-row flex-wrap justify-center sm:justify-center md:justify-end gap-4 sm:gap-6 md:gap-20 lg:gap-20 xl:gap-40 mt-6 md:mt-0'>
+        <div className='flex-[1.5] w-full flex flex-row flex-wrap justify-center sm:justify-center md:justify-end gap-2 sm:gap-6 md:gap-20 lg:gap-20 xl:gap-40 mt-6 md:mt-0'>
           {footerlinks.map((footerlink) => (
             <div key={footerlink.key} className='flex flex-col ss:my-0 my-4 min-w-[120px] sm:min-w-[100px] gap-3'>
-              <h4>
+              <h4 className='font-bold'>
                 {footerlink.title}
               </h4>
               <ul>
                 {footerlink.links.map((link, index) => (
                   <li key={link.name}
-                    className={`font-normal text-[16px] leading-[24px] hover:text-sky-300 cursor-pointer ${index !== footerlink.links.length - 1 ? 'mb-4' : 'mb-0'}`}
+                    className={`text-gray-700 font-normal text-[16px] leading-[24px] hover:text-[#005dc6] transition-all duration-300 cursor-pointer ${index !== footerlink.links.length - 1 ? 'mb-4' : 'mb-0'}`}
                   >
                     {link.name}
                   </li>
@@ -90,14 +90,14 @@ const Footer = () => {
 
       <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6 mb-5 border-t-[1px] border-t-gray-400'>
 
-        <p className='font-normal text-center text-[18px] leading-[27px]'>
+        <p className='font-medium text-center text-gray-700 text-[18px] leading-[27px]'>
           © MakverseTech 2026 | All Rights Reserved
         </p>
 
         <div className='flex flex-row gap-5 md:mt-0 mt-6'>
-          <FaInstagram className='w-8 h-8 object-contain cursor-pointer' />
-          <FaFacebook className='w-8 h-8 object-contain cursor-pointer' />
-          <FaLinkedin className='w-8 h-8 object-contain cursor-pointer' />
+          <FaInstagram className='text-gray-700 w-8 h-8 object-contain cursor-pointer' />
+          <FaFacebook className='text-gray-700 w-8 h-8 object-contain cursor-pointer' />
+          <FaLinkedin className='text-gray-700 w-8 h-8 object-contain cursor-pointer' />
         </div>
 
       </div>

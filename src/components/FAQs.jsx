@@ -69,20 +69,20 @@ export default function FAQ() {
                         >
                             <button
                                 onClick={() => toggleAccordion(index)}
-                                className="w-full text-left bg-white rounded-xl px-6 py-5 transition-all duration-300 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                className="w-full text-left bg-white rounded-xl px-6 py-5 transition-all duration-300 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#005dc6] focus:ring-offset-2"
                             >
                                 <div className="flex items-center justify-between gap-4">
-                                    <span className="text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
+                                    <span className="text-lg font-semibold text-gray-700 group-hover:text-[#005dc6] transition-colors">
                                         {faq.question}
                                     </span>
                                     <div
                                         className={`flex-shrink-0 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center transition-all duration-300 ${openIndex === index
-                                            ? 'bg-blue-600 rotate-180'
+                                            ? 'bg-[#005dc6] rotate-180'
                                             : 'group-hover:bg-blue-100'
                                             }`}
                                     >
                                         <svg
-                                            className={`w-4 h-4 transition-colors duration-300 ${openIndex === index ? 'text-white' : 'text-blue-600'
+                                            className={`w-4 h-4 transition-colors duration-300 ${openIndex === index ? 'text-white' : 'text-[#005dc6]'
                                                 }`}
                                             fill="none"
                                             strokeLinecap="round"
@@ -115,7 +115,7 @@ export default function FAQ() {
                     <p className="text-slate-600 mb-4">
                         Didn't find what you're looking for?
                     </p>
-                    <button className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    <button className="inline-flex items-center gap-2 px-6 py-3 bg-[#005dc6] text-white font-semibold rounded-lg hover:bg-[#1e75d8] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                         Contact our team
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

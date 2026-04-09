@@ -45,7 +45,7 @@ const servicesData = [
 const Services = () => {
     return (
         <section id='services' className='relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700'>
-            <h1 className='text-2xl font-semibold bg-blue-300 rounded-full px-3 py-1'>Our Services</h1>
+            <h1 className='text-2xl font-bold bg-blue-300 rounded-full px-3 py-1'>Our Services</h1>
             <Title title='Driving Smarter Growth Through Strategic Solutions' desc='Our solutions are carefully curated to not just keep businesses running but to help them move forward. By aligning strategy, technology, and execution, we help organizations operate smarter and grow faster.' />
 
             <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3'>

@@ -67,7 +67,7 @@ const Blogs = () => {
               </span>
 
               {/* Title */}
-              <h2 className='text-lg font-bold text-slate-900'>
+              <h2 className='text-lg font-bold text-gray-700'>
                 {item.title}
               </h2>
 
@@ -77,7 +77,7 @@ const Blogs = () => {
               </p>
 
               {/* Button */}
-              <button className='mt-3 flex items-center gap-2 text-blue-600 font-medium group-hover:gap-3 transition-all duration-300'>
+              <button className='mt-3 flex items-center gap-2 text-[#005dc6] font-medium group-hover:gap-3 transition-all duration-300'>
                 Read More
                 <ArrowRight className='w-4 h-4 group-hover:translate-x-1 transition-transform duration-300' />
               </button>

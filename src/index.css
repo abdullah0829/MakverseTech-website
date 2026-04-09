@@ -63,6 +63,38 @@
 }
 
 
-*{
-    cursor: none;
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/font/ClashDisplay-Light.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/font/ClashDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/font/ClashDisplay-Bold.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Apply globally */
+body {
+  font-family: 'ClashDisplay', sans-serif;
+}
+
+/* Optional custom class */
+.font-clash {
+  font-family: 'ClashDisplay', sans-serif;
+}
+
+/* Your existing style */
+* {
+  cursor: none;
 }
