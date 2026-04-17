@@ -1,4 +1,4 @@
-import { Target, Settings, ShieldCheck, Headset } from "lucide-react"
+import { Target, Settings, ShieldCheck, Headset, ArrowRight } from "lucide-react"
 
 export default function WhyChooseUs() {
   const timelineItems = [
@@ -50,26 +50,16 @@ export default function WhyChooseUs() {
               the curve.
             </p>
 
-            <button className="inline-flex w-fit items-center gap-3 bg-[#005dc6] hover:bg-[#2d7edc] text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
-              Let's Talk
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </button>
+        <button className="relative text-white flex items-center w-40 gap-4 px-6 py-3 bg-[#005dc6] rounded-full overflow-hidden group">
+          <ArrowRight className='w-5 h-5 group-hover:translate-x-22 transition-transform duration-300' />
+          <span className="relative z-10 text-white font-semibold group-hover:-translate-x-6 transition-transform duration-300">
+            Let's Talk
+          </span>
+        </button>
           </div>
 
           {/* Right Column - Timeline */}
-          <div className="relative pt-0 lg:pt-8">
+          <div className="relative">
 
             {/* Timeline Line */}
             <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-slate-300 to-slate-200 hidden sm:block"></div>
@@ -88,7 +78,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   {/* Content Card */}
-                  <div className=" relative bg-white rounded-lg p-6 pl-16 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                  <div className=" relative bg-white rounded-lg p-2 pl-10 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                     <h3 className="text-xl font-bold text-gray-700 mb-2">
                       {item.title}
                     </h3>

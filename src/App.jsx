@@ -26,22 +26,19 @@ const App = () => {
     document.addEventListener("mousemove", handleMouseMove);
 
     const animate = () => {
-      // smooth follow (lerp effect)
-      position.current.x += (mouse.current.x - position.current.x) * 0.1;
-      position.current.y += (mouse.current.y - position.current.y) * 0.1;
+  position.current.x = mouse.current.x;
+  position.current.y = mouse.current.y;
 
-      if (dotRef.current && outlineRef.current) {
-        // outer ring (24px → half = 12)
-outlineRef.current.style.transform =
-  `translate3d(${position.current.x - 12}px, ${position.current.y - 12}px, 0)`;
+  if (dotRef.current && outlineRef.current) {
+    outlineRef.current.style.transform =
+      `translate3d(${position.current.x - 12}px, ${position.current.y - 12}px, 0)`;
 
-// inner dot (8px → half = 4)
-dotRef.current.style.transform =
-  `translate3d(${position.current.x - 4}px, ${position.current.y - 4}px, 0)`;
-      }
+    dotRef.current.style.transform =
+      `translate3d(${position.current.x - 4}px, ${position.current.y - 4}px, 0)`;
+  }
 
-      requestAnimationFrame(animate);
-    };
+  requestAnimationFrame(animate);
+};
 
     animate();
 

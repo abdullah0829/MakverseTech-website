@@ -1,3 +1,4 @@
+import { ChevronRight } from 'lucide-react';
 import React, { useState } from 'react';
 
 export default function FAQ() {
@@ -32,13 +33,15 @@ export default function FAQ() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
-            {/* Background decorative elements */}
+
+            {/* Background */}
             <div className="fixed inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
                 <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-50 rounded-full blur-3xl opacity-20"></div>
             </div>
 
-            <div className="relative z-10 max-w-3xl mx-auto px-6 py-20">
+            <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
+
                 {/* Header */}
                 <div className="text-center mb-16">
 
@@ -47,42 +50,50 @@ export default function FAQ() {
                     </h1>
 
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-700 mb-6 tracking-tight">
-                        Frequently Asked
-                        <br />
-                        <span className="bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
-                            Questions
+                        Frequently Asked 
+                        {/* <br /> */}<span className="bg-gradient-to-r from-[#003f97] to-[#11c8fb] bg-clip-text text-transparent"> Questions
                         </span>
                     </h1>
 
-                    <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mx-auto">
+                    <p className="text-lg text-slate-500 leading-relaxed max-w-3xl mx-auto">
                         Find answers to common questions about our services, approach, and how we support your technology goals.
                     </p>
 
                 </div>
 
                 {/* FAQ Accordion */}
-                <div className="space-y-3">
+                <div className="space-y-3 max-w-6xl mx-auto">
                     {faqs.map((faq, index) => (
-                        <div
-                            key={index}
-                            className="group"
-                        >
+                        <div key={index} className="group">
+
                             <button
                                 onClick={() => toggleAccordion(index)}
-                                className="w-full text-left bg-white rounded-xl px-6 py-5 transition-all duration-300 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#005dc6] focus:ring-offset-2"
+                                className={`w-full text-left rounded-xl px-6 py-5 transition-all duration-300 ${openIndex === index
+                                        ? 'bg-[#005dc6] text-white'
+                                        : 'bg-white hover:shadow-[0_4px_6px_rgba(0,0,0,0.08)]'
+                                    }`}
                             >
                                 <div className="flex items-center justify-between gap-4">
-                                    <span className="text-lg font-semibold text-gray-700 group-hover:text-[#005dc6] transition-colors">
+
+                                    <span
+                                        className={`text-lg font-semibold transition-colors ${openIndex === index
+                                                ? 'text-white'
+                                                : 'text-gray-700 group-hover:text-[#005dc6]'
+                                            }`}
+                                    >
                                         {faq.question}
                                     </span>
+
                                     <div
-                                        className={`flex-shrink-0 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center transition-all duration-300 ${openIndex === index
-                                            ? 'bg-[#005dc6] rotate-180'
-                                            : 'group-hover:bg-blue-100'
+                                        className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 ${openIndex === index
+                                                ? 'bg-white rotate-180'
+                                                : 'bg-blue-50 group-hover:bg-blue-100'
                                             }`}
                                     >
                                         <svg
-                                            className={`w-4 h-4 transition-colors duration-300 ${openIndex === index ? 'text-white' : 'text-[#005dc6]'
+                                            className={`w-4 h-4 transition-colors duration-300 ${openIndex === index
+                                                    ? 'text-[#005dc6]'
+                                                    : 'text-[#005dc6]'
                                                 }`}
                                             fill="none"
                                             strokeLinecap="round"
@@ -94,10 +105,11 @@ export default function FAQ() {
                                             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                                         </svg>
                                     </div>
+
                                 </div>
                             </button>
 
-                            {/* Answer - Animated height collapse */}
+                            {/* Answer (UNCHANGED STYLE) */}
                             <div
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96' : 'max-h-0'
                                     }`}
@@ -106,22 +118,30 @@ export default function FAQ() {
                                     {faq.answer}
                                 </div>
                             </div>
+
                         </div>
                     ))}
                 </div>
 
                 {/* Footer CTA */}
                 <div className="mt-16 text-center">
-                    <p className="text-slate-600 mb-4">
-                        Didn't find what you're looking for?
-                    </p>
-                    <button className="inline-flex items-center gap-2 px-6 py-3 bg-[#005dc6] text-white font-semibold rounded-lg hover:bg-[#1e75d8] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                        Contact our team
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
-                </div>
+    <p className="text-slate-600 mb-4">
+        Didn't find what you're looking for?
+    </p>
+
+    <button className="group inline-flex items-center gap-2 px-6 py-3 bg-[#005dc6] text-white font-bold rounded-full overflow-hidden">
+
+        {/* Text */}
+        <span className="transition-transform duration-300 group-hover:translate-x-6">
+            Contact our team
+        </span>
+
+        {/* Icon */}
+        <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-36" />
+
+    </button>
+</div>
+
             </div>
         </div>
     );
