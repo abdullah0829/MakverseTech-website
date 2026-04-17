@@ -40,22 +40,22 @@ export default function WhyChooseUs() {
             </div>
 
             <h2 className="text-4xl text-gray-700 sm:text-5xl font-bold mb-6 leading-tight">
-              The MakverseTech Advantage
+              The <span className="bg-gradient-to-r from-[#003f97] to-[#11c8fb] bg-clip-text text-transparent">MakverseTech</span> Advantage
             </h2>
 
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
               Get enterprise-grade technology backed by deep domain expertise,
               precision-driven execution, and scalable infrastructure, engineered
               to accelerate performance and position your organization ahead of
               the curve.
             </p>
 
-        <button className="relative text-white flex items-center w-40 gap-4 px-6 py-3 bg-[#005dc6] rounded-full overflow-hidden group">
-          <ArrowRight className='w-5 h-5 group-hover:translate-x-22 transition-transform duration-300' />
-          <span className="relative z-10 text-white font-semibold group-hover:-translate-x-6 transition-transform duration-300">
-            Let's Talk
-          </span>
-        </button>
+            <button className="relative text-white flex items-center w-40 gap-4 px-6 py-3 bg-[#005dc6] rounded-full overflow-hidden group">
+              <ArrowRight className='w-5 h-5 group-hover:translate-x-22 transition-transform duration-300' />
+              <span className="relative z-10 text-white font-semibold group-hover:-translate-x-6 transition-transform duration-300">
+                Let's Talk
+              </span>
+            </button>
           </div>
 
           {/* Right Column - Timeline */}

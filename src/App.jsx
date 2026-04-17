@@ -7,6 +7,7 @@ import WhyChooseUs from './components/WhyChooseUs'
 import Footer from './components/Footer'
 import Blogs from './components/Blogs'
 import FAQs from './components/FAQs'
+import AboutUs from './components/AboutUs'
 
 const App = () => {
 
@@ -52,6 +53,7 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
+      <AboutUs />
       <Services />
       <WhyChooseUs />
       <Blogs />
