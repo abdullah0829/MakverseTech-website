@@ -1,12 +1,10 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
 
-// ✅ Correct image imports
 import blogImg1 from '../assets/blog1.webp'
 import blogImg2 from '../assets/blog2.webp'
 import blogImg3 from '../assets/blog3.webp'
 
-// ✅ Data using imported images
 const blogsCard = [
   {
     time: "December, 2025",
@@ -32,7 +30,7 @@ const Blogs = () => {
   return (
     <section
       id='blogs'
-      className='relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-8 text-gray-700 mb-20'
+      className='relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-20 text-gray-700 mb-20'
     >
 
       {/* Heading */}

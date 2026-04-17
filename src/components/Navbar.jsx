@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react'
+import { ArrowRight, Menu, X } from 'lucide-react'
 import React, { useState, useEffect } from 'react'
 import logo from "../assets/logo.png";
 
@@ -28,11 +28,13 @@ const Navbar = () => {
     >
 
       {/* Logo */}
-      <img
-        src={logo}
-        alt="logo"
-        className={`transition-all duration-500 ${isTop ? 'w-40 sm:w-52' : 'w-32 sm:w-40'}`}
-      />
+      <div className="flex items-center w-40 sm:w-52">
+        <img
+          src={logo}
+          alt="logo"
+          className={`transition-all duration-500 ${isTop ? 'w-40 sm:w-52' : 'w-32 sm:w-40'}`}
+        />
+      </div>
 
       {/* Nav Links */}
       <div className={`
@@ -66,25 +68,9 @@ const Navbar = () => {
         />
 
         {/* Button (ONLY Desktop) */}
-        <button className="hidden md:flex relative flex items-center gap-4 pl-10 pr-5 py-3 border-2 border-[#005dc6] rounded-full overflow-hidden group">
-  
-          {/* Expanding black circle */}
-          <span className="absolute left-0 top-0 h-full w-full bg-[#005dc6] rounded-full transition-all duration-500 ease-[cubic-bezier(1,0,0.8,1)] group-hover:w-12"></span>
-
-          {/* Arrow container (CENTERED in circle) */}
-          <span className="pl-3 absolute left-0 top-0 h-full w-12 flex items-center justify-center z-10">
-            
-            {/* Arrow head */}
-            <span className="relative w-3 h-3 border-t-3 border-r-3 border-white rotate-45 transition-all duration-500 group-hover:-translate-x-2">
-              
-              {/* Line (appears on hover) */}
-              <span className="absolute w-4 h-0.5 bg-white -rotate-45 -left-1 top-1 opacity-100 transition-all duration-500 group-hover:opacity-0"></span>
-            
-            </span>
-          </span>
-
-          {/* Text */}
-          <span className="pl-3 relative z-10 text-white font-semibold tracking-wide transition-all duration-500 group-hover:text-[#005dc6]">
+        <button className="relative text-white flex items-center w-40 gap-4 px-6 py-3 bg-[#005dc6] rounded-full overflow-hidden group">
+          <ArrowRight className='w-5 h-5 group-hover:translate-x-22 transition-transform duration-300' />
+          <span className="relative z-10 text-white font-semibold group-hover:-translate-x-6 transition-transform duration-300">
             Let's Talk
           </span>
         </button>

@@ -33,13 +33,6 @@ export default function FAQ() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
-
-            {/* Background */}
-            <div className="fixed inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
-                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-50 rounded-full blur-3xl opacity-20"></div>
-            </div>
-
             <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
 
                 {/* Header */}
@@ -50,9 +43,7 @@ export default function FAQ() {
                     </h1>
 
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-700 mb-6 tracking-tight">
-                        Frequently Asked 
-                        {/* <br /> */}<span className="bg-gradient-to-r from-[#003f97] to-[#11c8fb] bg-clip-text text-transparent"> Questions
-                        </span>
+                        Frequently Asked<span className="bg-gradient-to-r from-[#003f97] to-[#11c8fb] bg-clip-text text-transparent"> Questions</span>
                     </h1>
 
                     <p className="text-lg text-slate-500 leading-relaxed max-w-3xl mx-auto">
@@ -69,16 +60,16 @@ export default function FAQ() {
                             <button
                                 onClick={() => toggleAccordion(index)}
                                 className={`w-full text-left rounded-xl px-6 py-5 transition-all duration-300 ${openIndex === index
-                                        ? 'bg-[#005dc6] text-white'
-                                        : 'bg-white hover:shadow-[0_4px_6px_rgba(0,0,0,0.08)]'
+                                    ? 'bg-[#005dc6] text-white'
+                                    : 'bg-white hover:shadow-[0_4px_6px_rgba(0,0,0,0.08)]'
                                     }`}
                             >
                                 <div className="flex items-center justify-between gap-4">
 
                                     <span
                                         className={`text-lg font-semibold transition-colors ${openIndex === index
-                                                ? 'text-white'
-                                                : 'text-gray-700 group-hover:text-[#005dc6]'
+                                            ? 'text-white'
+                                            : 'text-gray-700 group-hover:text-[#005dc6]'
                                             }`}
                                     >
                                         {faq.question}
@@ -86,14 +77,14 @@ export default function FAQ() {
 
                                     <div
                                         className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 ${openIndex === index
-                                                ? 'bg-white rotate-180'
-                                                : 'bg-blue-50 group-hover:bg-blue-100'
+                                            ? 'bg-white rotate-180'
+                                            : 'bg-blue-50 group-hover:bg-blue-100'
                                             }`}
                                     >
                                         <svg
                                             className={`w-4 h-4 transition-colors duration-300 ${openIndex === index
-                                                    ? 'text-[#005dc6]'
-                                                    : 'text-[#005dc6]'
+                                                ? 'text-[#005dc6]'
+                                                : 'text-[#005dc6]'
                                                 }`}
                                             fill="none"
                                             strokeLinecap="round"
@@ -125,22 +116,22 @@ export default function FAQ() {
 
                 {/* Footer CTA */}
                 <div className="mt-16 text-center">
-    <p className="text-slate-600 mb-4">
-        Didn't find what you're looking for?
-    </p>
+                    <p className="text-slate-600 mb-4">
+                        Didn't find what you're looking for?
+                    </p>
 
-    <button className="group inline-flex items-center gap-2 px-6 py-3 bg-[#005dc6] text-white font-bold rounded-full overflow-hidden">
+                    <button className="group inline-flex items-center gap-2 px-6 py-3 tracking-wide bg-[#005dc6] text-white font-bold rounded-full overflow-hidden">
 
-        {/* Text */}
-        <span className="transition-transform duration-300 group-hover:translate-x-6">
-            Contact our team
-        </span>
+                        {/* Text */}
+                        <span className="transition-transform duration-300 group-hover:translate-x-6">
+                            Contact our team
+                        </span>
 
-        {/* Icon */}
-        <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-36" />
+                        {/* Icon */}
+                        <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-38" />
 
-    </button>
-</div>
+                    </button>
+                </div>
 
             </div>
         </div>
