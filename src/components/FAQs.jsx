@@ -113,26 +113,6 @@ export default function FAQ() {
                         </div>
                     ))}
                 </div>
-
-                {/* Footer CTA */}
-                <div className="mt-16 text-center">
-                    <p className="text-slate-600 mb-4">
-                        Didn't find what you're looking for?
-                    </p>
-
-                    <button className="group inline-flex items-center gap-2 px-6 py-3 tracking-wide bg-[#005dc6] text-white font-bold rounded-full overflow-hidden">
-
-                        {/* Text */}
-                        <span className="transition-transform duration-300 group-hover:translate-x-6">
-                            Contact our team
-                        </span>
-
-                        {/* Icon */}
-                        <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-38" />
-
-                    </button>
-                </div>
-
             </div>
         </div>
     );

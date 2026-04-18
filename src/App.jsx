@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Blogs from './components/Blogs'
 import FAQs from './components/FAQs'
 import AboutUs from './components/AboutUs'
+import ContactUs from './components/ContactUs'
 
 const App = () => {
 
@@ -58,6 +59,7 @@ const App = () => {
       <WhyChooseUs />
       <Blogs />
       <FAQs />
+      <ContactUs />
       <Footer />
 
 
