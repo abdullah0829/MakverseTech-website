@@ -15,17 +15,15 @@ const App = () => {
   const dotRef = useRef(null)
   const outlineRef = useRef(null)
 
-  // Refs for custom cursor position tracking
   const mouse = useRef({ x: 0, y: 0 })
   const position = useRef({ x: 0, y: 0 })
 
   useEffect(() => {
 
-    // Detect touch devices (mobile/tablet)
-    const isTouchDevice =
-      'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    // ✅ Better detection (fixes PC issue)
+    const isFinePointer = window.matchMedia("(pointer: fine)").matches;
 
-    if (isTouchDevice) return; // ⛔ stop everything for touch devices
+    if (!isFinePointer) return;
 
     const handleMouseMove = (e) => {
       mouse.current.x = e.clientX
