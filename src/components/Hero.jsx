@@ -7,10 +7,10 @@ const Hero = () => {
     <section id='hero' className='flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700'>
       <div className="absolute top-48 left-4 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-[#71a8e8] rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-20 right-4 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-[#71a8e8] rounded-full blur-3xl animate-pulse delay-1000" />
-      <div className='inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full transition-all animate-in slide-in-from-bottom duration-700'>
-        <Sparkles className="w-4 h-4" />
-        <span className="text-xs sm:text-sm ">
-          Welcome to MakverseTech!
+      <div className='inline-flex items-center gap-2 border bg-[#005dc6]/10 border border-[#005dc6]/20 p-1.5 pr-4 rounded-full transition-all animate-in slide-in-from-bottom duration-700'>
+        <Sparkles className="w-4 h-4 text-[#4680c2]" />
+        <span className="text-xs sm:text-sm text-[#4680c2]">
+          Welcome to MakverseGlobal !
         </span>
       </div>
       <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl xl:text-[84px] xl:leading-[95px] max-w-5xl transition-all animate-in slide-in-from-bottom duration-700 delay-100'>

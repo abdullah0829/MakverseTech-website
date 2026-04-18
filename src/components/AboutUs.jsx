@@ -49,10 +49,10 @@ const AboutUs = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo soluta eligendi, laboriosam commodi explicabo velit fugit odit rem error eius nobis veritatis perspiciatis libero dolorum eos id a ab excepturi.
           </p>
 
-          <button className="relative text-white flex items-center w-40 gap-4 px-6 py-3 bg-[#005dc6] rounded-full overflow-hidden group">
-          <ArrowRight className='w-5 h-5 group-hover:translate-x-22 transition-transform duration-300' />
+          <button className="relative text-white flex items-center w-40 gap-2 px-4 py-3 bg-[#005dc6] rounded-full overflow-hidden group">
+          <ArrowRight className='w-5 h-5 group-hover:translate-x-25 transition-transform duration-300' />
           <span className="relative z-10 text-white font-semibold group-hover:-translate-x-6 transition-transform duration-300">
-            Let's Talk
+            Learn More
           </span>
         </button>
 

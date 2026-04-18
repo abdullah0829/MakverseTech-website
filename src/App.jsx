@@ -20,6 +20,13 @@ const App = () => {
   const position = useRef({ x: 0, y: 0 })
 
   useEffect(() => {
+
+    // Detect touch devices (mobile/tablet)
+    const isTouchDevice =
+      'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    if (isTouchDevice) return; // ⛔ stop everything for touch devices
+
     const handleMouseMove = (e) => {
       mouse.current.x = e.clientX
       mouse.current.y = e.clientY
@@ -28,19 +35,19 @@ const App = () => {
     document.addEventListener("mousemove", handleMouseMove);
 
     const animate = () => {
-  position.current.x = mouse.current.x;
-  position.current.y = mouse.current.y;
+      position.current.x = mouse.current.x;
+      position.current.y = mouse.current.y;
 
-  if (dotRef.current && outlineRef.current) {
-    outlineRef.current.style.transform =
-      `translate3d(${position.current.x - 12}px, ${position.current.y - 12}px, 0)`;
+      if (dotRef.current && outlineRef.current) {
+        outlineRef.current.style.transform =
+          `translate3d(${position.current.x - 12}px, ${position.current.y - 12}px, 0)`;
 
-    dotRef.current.style.transform =
-      `translate3d(${position.current.x - 4}px, ${position.current.y - 4}px, 0)`;
-  }
+        dotRef.current.style.transform =
+          `translate3d(${position.current.x - 4}px, ${position.current.y - 4}px, 0)`;
+      }
 
-  requestAnimationFrame(animate);
-};
+      requestAnimationFrame(animate);
+    };
 
     animate();
 
@@ -62,18 +69,17 @@ const App = () => {
       <ContactUs />
       <Footer />
 
-
       {/* Custom Cursor Ring */}
-<div
-  ref={outlineRef}
-  className="fixed top-0 left-0 h-6 w-6 rounded-full border border-[#005dc6] pointer-events-none z-[9999]"
-></div>
+      <div
+        ref={outlineRef}
+        className="hidden md:block fixed top-0 left-0 h-6 w-6 rounded-full border border-[#005dc6] pointer-events-none z-[9999]"
+      ></div>
 
-{/* Custom Cursor Dot */}
-<div
-  ref={dotRef}
-  className="fixed top-0 left-0 h-2 w-2 rounded-full bg-[#005dc6] pointer-events-none z-[9999]"
-></div>
+      {/* Custom Cursor Dot */}
+      <div
+        ref={dotRef}
+        className="hidden md:block fixed top-0 left-0 h-2 w-2 rounded-full bg-[#005dc6] pointer-events-none z-[9999]"
+      ></div>
 
     </div>
   )

@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
             </div>
 
             <h2 className="text-4xl text-gray-700 sm:text-5xl font-bold mb-6 leading-tight">
-              The <span className="bg-gradient-to-r from-[#003f97] to-[#11c8fb] bg-clip-text text-transparent">MakverseTech</span> Advantage
+              The <span className="bg-gradient-to-r from-[#003f97] to-[#11c8fb] bg-clip-text text-transparent">MakverseGlobal</span> Advantage
             </h2>
 
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">

@@ -6,22 +6,22 @@ const footerlinks = [
   {
     title: "Quick Links",
     links: [
-      { name: "About", link: "https://www.MakverseTech.com/about/" },
-      { name: "Contact", link: "https://www.MakverseTech.com/contact/" },
-      { name: "Blogs", link: "https://www.MakverseTech.com/blogs/" },
-      { name: "Services", link: "https://www.MakverseTech.com/services/" },
-      { name: "Privacy Policy", link: "https://www.MakverseTech.com/privacy-policy/" }
+      { name: "About", link: "https://www.MakverseGlobal.com/about/" },
+      { name: "Contact", link: "https://www.MakverseGlobal.com/contact/" },
+      { name: "Blogs", link: "https://www.MakverseGlobal.com/blogs/" },
+      { name: "Services", link: "https://www.MakverseGlobal.com/services/" },
+      { name: "Privacy Policy", link: "https://www.MakverseGlobal.com/privacy-policy/" }
     ],
   },
   {
     title: "Our Services",
     links: [
-      { name: "Managed IT Services", link: "https://www.MakverseTech.com/managed-it-services/" },
-      { name: "Revenue Cycle Management", link: "https://www.MakverseTech.com/revenue-cycle-management/" },
-      { name: "Enterprise IT Solution", link: "https://www.MakverseTech.com/enterprise-it/" },
-      { name: "Digital Marketing", link: "https://www.MakverseTech.com/digital-marketing/" },
-      { name: "Digital Product Development", link: "https://www.MakverseTech.com/digital-product-development/" },
-      { name: "Healthcare Staff Augmentation", link: "https://www.MakverseTech.com/healthcare-staff-augmentation/" }
+      { name: "Managed IT Services", link: "https://www.MakverseGlobal.com/managed-it-services/" },
+      { name: "Revenue Cycle Management", link: "https://www.MakverseGlobal.com/revenue-cycle-management/" },
+      { name: "Enterprise IT Solution", link: "https://www.MakverseGlobal.com/enterprise-it/" },
+      { name: "Digital Marketing", link: "https://www.MakverseGlobal.com/digital-marketing/" },
+      { name: "Digital Product Development", link: "https://www.MakverseGlobal.com/digital-product-development/" },
+      { name: "Healthcare Staff Augmentation", link: "https://www.MakverseGlobal.com/healthcare-staff-augmentation/" }
     ],
   },
 ]
@@ -128,7 +128,7 @@ const Footer = () => {
       ">
 
         <p className="text-gray-700 text-center">
-          © MakverseTech 2026 | All Rights Reserved
+          © MakverseGlobal 2026 | All Rights Reserved
         </p>
 
         <div className="flex gap-5 mt-5 md:mt-0">

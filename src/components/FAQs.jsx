@@ -6,7 +6,7 @@ export default function FAQ() {
 
     const faqs = [
         {
-            question: "What industries do MakverseTech serve?",
+            question: "What industries do MakverseGlobal serve?",
             answer: "Makverse primarily serves healthcare organizations while also supporting growing enterprises that require advanced digital product development and managed IT solutions. We specialize in helping organizations modernize their technology infrastructure and digital capabilities."
         },
         {
@@ -18,11 +18,11 @@ export default function FAQ() {
             answer: "Yes, we offer complete project management services from initial planning through deployment and ongoing support. Our team handles requirements gathering, architecture design, development, testing, and production deployment to ensure successful project delivery."
         },
         {
-            question: "How does MakverseTech ensure data security and compliance?",
+            question: "How does MakverseGlobal ensure data security and compliance?",
             answer: "We implement industry-leading security practices including HIPAA compliance for healthcare clients, data encryption, regular security audits, and comprehensive access controls. Our infrastructure meets SOC 2 standards and we maintain strict compliance with regulatory requirements."
         },
         {
-            question: "Can MakverseTech support long-term technology growth?",
+            question: "Can MakverseGlobal support long-term technology growth?",
             answer: "Absolutely. We provide scalable solutions designed to grow with your organization. Our approach includes flexible architecture, cloud-native technologies, and strategic consulting to ensure your technology foundation supports future expansion and evolving business needs."
         }
     ];
